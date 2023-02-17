@@ -1,0 +1,65 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(514,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Attempt1Pr.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  AnimatedSprite.cpp
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\AnimatedSprite.cpp(79,48): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\AnimatedSprite.cpp(80,48): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Game.cpp
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Headers\Tile.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Game.cpp(72,24): warning C4244: 'argument': conversion from 'const _Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Game.cpp(95,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Graphics.cpp
+  Input.cpp
+  Level.cpp
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Headers\Tile.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Level.cpp(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Level.cpp(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Level.cpp(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Level.cpp(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Level.cpp(8,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Level.cpp(169,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Level.cpp(168,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Level.cpp(167,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Level.cpp(166,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Main.cpp
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Headers\Tile.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Player.cpp
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Player.cpp(31,71): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Player.cpp(31,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Player.cpp(46,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Player.cpp(96,41): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Player.cpp(104,71): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Player.cpp(109,40): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Player.cpp(112,71): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Sprite.cpp
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Sprite.cpp(27,91): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Sprite.cpp(27,59): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Sprite.cpp(27,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Sprite.cpp(27,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Sprite.cpp(39,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Sprite.cpp(39,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Sprite.cpp(38,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Sprite.cpp(38,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Sprite.cpp(74,62): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Sprite.cpp(74,62): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Sprite.cpp(74,107): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Sprite.cpp(74,107): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Tile.cpp
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Headers\tile.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Tile.cpp(13,65): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Tile.cpp(13,30): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Tile.cpp(15,40): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Tile.cpp(15,9): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Tile.cpp(14,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Tile.cpp(14,18): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Tile.cpp(23,18): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Tile.cpp(23,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Tile.cpp(23,57): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Tile.cpp(23,57): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Tile.cpp(56,23): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Michael\OneDrive\Desktop\SupMar01\Attempt1Pr\Source\Tile.cpp(61,23): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  tinyxml2.cpp
+  Generating Code...
+  Attempt1Pr.vcxproj -> C:\Users\Michael\OneDrive\Desktop\SupMar01\x64\Debug\SuperMario.exe
