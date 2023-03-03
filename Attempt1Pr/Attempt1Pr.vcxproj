@@ -158,6 +158,7 @@
     <ClInclude Include="Headers\Graphics.h" />
     <ClInclude Include="Headers\Input.h" />
     <ClInclude Include="Headers\Level.h" />
+    <ClInclude Include="Headers\Mushrooms.h" />
     <ClInclude Include="Headers\Player.h" />
     <ClInclude Include="Headers\Rectangle.h" />
     <ClInclude Include="Headers\Sprite.h" />
@@ -171,6 +172,7 @@
     <ClCompile Include="Source\Input.cpp" />
     <ClCompile Include="Source\Level.cpp" />
     <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\Mushrooms.cpp" />
     <ClCompile Include="Source\Player.cpp" />
     <ClCompile Include="Source\Sprite.cpp" />
     <ClCompile Include="Source\Tile.cpp" />

@@ -94,10 +94,14 @@ void Game::update(float elapsedTime)
 	this->_player.update(elapsedTime);
 	this->_level.update(elapsedTime);
 
-	//Check collisions
+	//Check tile collisions
 	std::vector<Rectangle> others;
 	if ((others = this->_level.checkTileCollisions(this->_player.getBoundingBox())).size() > 0) {
 		//Player collided with at least one tile. Handle it.
-		this->_player.handleTileCollisions(others);
-	}
+		this->_player.handleTileCollisions(others);	}
+
+	this->_level.checkMushroomCollisions(this->_player.getBoundingBox());
+
+
+
 }

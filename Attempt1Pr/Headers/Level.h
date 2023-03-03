@@ -4,6 +4,7 @@
 #include "Globals.h"
 #include "Tile.h"
 #include "Rectangle.h"
+#include "Mushrooms.h"
 
 class Graphics;
 struct SDL_Texture;
@@ -31,6 +32,9 @@ public:
 	void draw(Graphics& graphics, Rectangle& camera);
 
 	std::vector<Rectangle> checkTileCollisions(const Rectangle& other);
+	void checkMushroomCollisions(const Rectangle& other);
+
+
 
 private:
 	std::string _mapName;
@@ -43,6 +47,7 @@ private:
 	std::vector<Tileset> _tilesets;
 	std::vector<Rectangle> _collisionRects;
 
+	std::vector<Mushroom> _mushroomList;
 
 	void loadMap(std::string mapName, Graphics& graphics, Rectangle& camera);
 

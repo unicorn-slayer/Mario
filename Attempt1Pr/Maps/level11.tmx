@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="211" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="60">
- <tileset firstgid="1" source="Maps/level11.tsx" altsource = "Sprites/level11.png"/>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="211" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="62">
+ <tileset firstgid="1" source="Maps/level11.tsx" altsource ="Sprites/level11.png"/>
  <layer id="1" name="Tile Layer 1" width="211" height="30">
   <data>
    <tile gid="1"/>
@@ -6335,6 +6335,10 @@
    <tile gid="6330"/>
   </data>
  </layer>
+ <objectgroup id="3" name="mushrooms">
+  <object id="60" name="first" x="336" y="144" width="16" height="16"/>
+  <object id="61" name="second" x="1696" y="144" width="16" height="16"/>
+ </objectgroup>
  <objectgroup id="2" name="collisions">
   <object id="1" x="0" y="208" width="448" height="32"/>
   <object id="4" x="448" y="208" width="656" height="32"/>

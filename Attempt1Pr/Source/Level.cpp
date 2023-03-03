@@ -108,14 +108,11 @@ void Level::loadMap(std::string mapName, Graphics& graphics, Rectangle& camera)
 								}
 							}
 
-							//Get the position of the tile in the level
-							//incorporate camera x and y to get tiles moving relative to the camera
 							int xx = 0;
 							int yy = 0;
 							xx = tileCounter % width;
 							xx *= tileWidth;
-							yy += tileHeight * (tileCounter / width);
-							//Vector2 finalTilePosition = Vector2(xx - camera.getLeft(), yy - camera.getTop());
+							yy += tileHeight * (tileCounter / width);							
 							Vector2 finalTilePosition = Vector2(xx, yy);
 
 							//calculate position of the tile in the tileset
@@ -173,41 +170,71 @@ void Level::loadMap(std::string mapName, Graphics& graphics, Rectangle& camera)
 					}
 				}
 				pObjectGroup = pObjectGroup->NextSiblingElement("objectgroup");
-			}			
+			}
+			if (ss.str() == "mushrooms")
+			{
+				XMLElement* pObject = pObjectGroup->FirstChildElement("object");
+				if (pObject != NULL) {
+					while (pObject) {
+						float x, y, width, height;
+						x = pObject->FloatAttribute("x");
+						y = pObject->FloatAttribute("y");
+						width = pObject->FloatAttribute("width");
+						height = pObject->FloatAttribute("height");
+						this->_mushroomList.push_back(Mushroom(
+							graphics,
+							std::ceil(x) * globals::SPRITE_SCALE,
+							std::ceil(y) * globals::SPRITE_SCALE,
+							std::ceil(width) * globals::SPRITE_SCALE,
+							std::ceil(height) * globals::SPRITE_SCALE
+						));
+
+						pObject = pObject->NextSiblingElement("object");
+					}
+				}
+				pObjectGroup = pObjectGroup->NextSiblingElement("objectgroup");
+			}
+		}
+	}
+
+}
+
+void Level::update(int elapsedTime)
+{
+	if (this->_mushroomList.size() > 0)
+	{
+		for (int i = 0; i < this->_mushroomList.size(); i++)
+		{
+			this->_mushroomList.at(i).update(elapsedTime);
 		}
 	}
 
 
 
-
-	//this->_backgroundTexture = SDL_CreateTextureFromSurface(graphics.getRenderer(),
-	//	graphics.loadImage("background.png"));
-	//this->_size = Vector2(1280, 960);
 }
 
-void Level::update(int elapsedTime)
-{
-
-}
-
-void Level::draw(Graphics& graphics, Rectangle& camera) // add an if statement, check if camera rect collides with tile rect, if yes, draw tiles.
+void Level::draw(Graphics& graphics, Rectangle& camera) 
 {
 	for (int i = 0; i < this->_tileList.size(); i++)
-	{
-
-		//_tileList.at(i) convert into rectangle, store in temp variable
+	{		
 		if (this->_tileList.at(i).getRect().collidesWith(camera))
-		{
-
-			//this->_tileList.at(i).setXPosition(this->_tileList.at(i).getXPosition() - camera.getLeft()); //change this to update tile position
-			//this->_tileList.at(i).setYPosition(_tileList.at(i).getYPosition() - camera.getTop()); might need to inverse
-			
+		{					
 			this->_tileList.at(i).setUpdatedXPosition(this->_tileList.at(i).getXPosition() - camera.getLeft());
 			this->_tileList.at(i).setUpdatedYPosition(this->_tileList.at(i).getYPosition() - camera.getTop());
 			
 			this->_tileList.at(i).draw(graphics);
-		}//something like this, camera added to parameter list above.
-		
+		}		
+	}
+
+	for (int i = 0; i < this->_mushroomList.size(); i++)
+	{
+		if (this->_mushroomList.at(i).getRect().collidesWith(camera))
+		{
+			this->_mushroomList.at(i).setUpdatedXPosition(this->_mushroomList.at(i).getXPosition() - camera.getLeft());
+			this->_mushroomList.at(i).setUpdatedYPosition(this->_mushroomList.at(i).getYPosition() - camera.getTop());
+
+			this->_mushroomList.at(i).draw(graphics);
+		}
 	}
 }
 
@@ -220,4 +247,16 @@ std::vector<Rectangle> Level::checkTileCollisions(const Rectangle& other) {
 	}
 	return others;
 }
+
+void Level::checkMushroomCollisions(const Rectangle& other)
+{
+	for (int i = 0; i < this->_mushroomList.size(); i++)
+	{
+		if (this->_mushroomList.at(i).getRect().collidesWith(other))
+		{
+			this->_mushroomList.at(i).activate();
+		}
+	}
+}
+
 

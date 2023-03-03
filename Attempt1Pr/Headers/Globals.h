@@ -47,3 +47,16 @@ struct Vector2 {
 		return Vector2(0, 0);
 	}
 };
+
+struct floatVector2 {
+	float x, y;
+	floatVector2() :
+		x(0), y(0)
+	{}
+	floatVector2(float x, float y) :
+		x(x), y(y)
+	{}
+	floatVector2 zero() {
+		return floatVector2(0, 0);
+	}
+};

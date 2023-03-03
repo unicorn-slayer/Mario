@@ -2,6 +2,7 @@
 
 #include "Player.h"
 #include "Level.h"
+#include "Mushrooms.h"
 
 class Graphics;
 
